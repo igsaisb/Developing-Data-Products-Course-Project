@@ -1,0 +1,48 @@
+Coursera Developing Data Projects Course Project
+========================================================
+author: 
+date: 9 June 2018
+autosize: true
+
+Why are we here?
+========================================================
+
+In partial fulfillment of course requirements, I present a reproducible presentation created in R Presentation to explain my Shiny web app.
+
+We present a simple model based on regression analysis for estimating a car's gas mileage according to its weight and horse-power. Data is drawn from the mtcars data set. 
+
+
+Example Code
+========================================================
+Here is the key bit of code: the model itself. I've included values for the predictors for demonstration purposes.
+```{r}
+model <- lm(mpg ~ hp+wt, data = mtcars)
+pred1 <- predict(model, newdata = data.frame(hp = 50, wt = 2.5))
+pred1
+```
+
+Shiny
+========================================================
+While one can only speculate that the application name is a reference to Firefly or IS ironically making note that apps can be distracting to those with short attention spans, Shiny does serve a useful purpose in making web-based application easy to create and share. Learn more here:
+
+http://shiny.rstudio.com/
+
+The App
+========================================================
+Try the app yourself:
+
+https://igsaisb.shinyapps.io/Dev_Data_Products_Course_Project/
+
+Code can be found here:
+
+https://github.com/igsaisb/Developing-Data-Products-Course-Project
+
+Thanks!
+
+
+
+
+
+
+
+
